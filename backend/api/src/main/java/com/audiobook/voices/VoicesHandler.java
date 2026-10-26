@@ -1,6 +1,6 @@
 package com.audiobook.voices;
 
-import com.audiobook.voices.model.VoiceDto;
+import com.audiobook.voices.model.VoiceDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +19,7 @@ public class VoicesHandler {
     }
 
     @GetMapping
-    public Map<String, List<VoiceDto>> getVoices() {
+    public Map<String, List<VoiceDetails>> getVoices() {
         return Map.of("voices", voicesService.listAllVoices());
     }
 }

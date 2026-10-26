@@ -5,12 +5,12 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Voice {
+public class VoiceDetails {
     private String id;
     private String name;
     private String gender;
     private String engine;
-    private Integer pricing;
+    private float pricePerM;
     private String languageCode;
     private String languageName;
 }
