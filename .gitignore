@@ -1,0 +1,36 @@
+# Build outputs
+dist/
+target/
+backend/dist/
+frontend/dist/
+
+# CDK
+infra/cdk.out/
+infra/cdk.context.json
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+infra/node_modules/
+
+# Third-party submodules
+infra/genesis-cdk/
+
+# IDE / tooling
+.claude/
+.idea/
+*.iml
+
+# Scratch / personal planning files
+INTERVIEW_PREP.md
+PLAN.md
+ml-inference-implementation-plan.md
+backend/main.jav
+
+# Vite scaffold assets
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg
+
+# Secrets / env
+.env
+.env.*
